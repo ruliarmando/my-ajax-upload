@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <title>AJAX Upload</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="upload.js"></script>
+	<link rel="stylesheet" type="text/css" href="upload.css" />
+</head>
+<body>
+    <h2>AJAX Upload</h2>
+	<div id="uploadprogress">Mengupload...<img src="loading.gif" alt="loader" /></div>
+	<div id="uploadform">
+		<form action="upload.php" method="post" id="form" enctype="multipart/form-data">
+			<label for="file">File</label>
+			<input type="file" name="file" id="file" /><br />
+			<input type="submit" id="upload" value="Upload" /><br /><br />
+			<span id="result"></span>
+		</form>
+	</div>
+</body>
+</html>
